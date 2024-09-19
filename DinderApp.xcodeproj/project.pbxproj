@@ -13,6 +13,7 @@
 		6C79D17A2C9C0FAC00C6222E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D1792C9C0FAC00C6222E /* Base */; };
 		6C79D17C2C9C0FAD00C6222E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D17B2C9C0FAD00C6222E /* Assets.xcassets */; };
 		6C79D17F2C9C0FAD00C6222E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D17E2C9C0FAD00C6222E /* Base */; };
+		6C79D1892C9C1EA300C6222E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D1882C9C1EA300C6222E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6C79D17B2C9C0FAD00C6222E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C79D17E2C9C0FAD00C6222E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C79D1802C9C0FAD00C6222E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C79D1882C9C1EA300C6222E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6C79D17B2C9C0FAD00C6222E /* Assets.xcassets */,
 				6C79D17D2C9C0FAD00C6222E /* LaunchScreen.storyboard */,
 				6C79D1802C9C0FAD00C6222E /* Info.plist */,
+				6C79D1882C9C1EA300C6222E /* GoogleService-Info.plist */,
 			);
 			path = DinderApp;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C79D17C2C9C0FAD00C6222E /* Assets.xcassets in Resources */,
+				6C79D1892C9C1EA300C6222E /* GoogleService-Info.plist in Resources */,
 				6C79D17F2C9C0FAD00C6222E /* Base in Resources */,
 				6C79D17A2C9C0FAC00C6222E /* Base in Resources */,
 			);
@@ -294,6 +298,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DinderApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dinder;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +326,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DinderApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dinder;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
