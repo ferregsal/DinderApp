@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-395" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Auth View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DinderApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AuthViewController" customModule="DinderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,11 +82,17 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="137.66666666666666" height="34.333333333333336"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                                                                        <connections>
+                                                                            <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pR-RO-a6U"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oF-kz-b2W">
                                                                         <rect key="frame" x="145.66666666666669" y="0.0" width="137.66666666666669" height="34.333333333333336"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="gray" title="Sign In"/>
+                                                                        <connections>
+                                                                            <action selector="signInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p3S-EA-TqL"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -144,11 +150,70 @@
                         <outlet property="mainView" destination="VuU-CV-eda" id="7iN-QE-gCr"/>
                         <outlet property="passwordTextField" destination="NSj-ys-AK9" id="KGC-ow-jBB"/>
                         <outlet property="signInButton" destination="0oF-kz-b2W" id="6Cf-6b-FKM"/>
+                        <segue destination="LvQ-fr-HZt" kind="show" identifier="goToHome" id="JUh-xp-QNa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="674.04580152671758" y="-6.3380281690140849"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Q4b-r6-4gL">
+            <objects>
+                <viewController id="LvQ-fr-HZt" customClass="HomeViewController" customModule="DinderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTh-0W-9wY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-mZ-5Sw">
+                                <rect key="frame" x="16" y="119" width="361" height="136"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po2-SE-kaP">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEQ-dr-qXe">
+                                        <rect key="frame" x="0.0" y="48" width="361" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mU-RJ-930">
+                                        <rect key="frame" x="0.0" y="96" width="361" height="40"/>
+                                        <color key="backgroundColor" red="0.95366217990000002" green="0.61282515900000001" blue="0.22721343799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="n28-2X-vs8"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Close Session"/>
+                                        <connections>
+                                            <action selector="closeSessionButtonAction:" destination="LvQ-fr-HZt" eventType="touchUpInside" id="tm5-u7-dpi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ap6-9F-lh1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ap6-9F-lh1" firstAttribute="trailing" secondItem="9ka-mZ-5Sw" secondAttribute="trailing" constant="16" id="1Wc-bE-Uu8"/>
+                            <constraint firstItem="9ka-mZ-5Sw" firstAttribute="top" secondItem="ap6-9F-lh1" secondAttribute="top" constant="16" id="Gyk-FE-Jby"/>
+                            <constraint firstItem="9ka-mZ-5Sw" firstAttribute="leading" secondItem="ap6-9F-lh1" secondAttribute="leading" constant="16" id="KEA-xS-0sd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w6F-gK-2Vy"/>
+                    <connections>
+                        <outlet property="closeSessionButton" destination="7mU-RJ-930" id="BZ9-Bk-S6y"/>
+                        <outlet property="emailLabel" destination="Po2-SE-kaP" id="a9N-Xd-NG0"/>
+                        <outlet property="providerLabel" destination="BEQ-dr-qXe" id="V4e-KM-5QI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z50-Oh-RiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408.3969465648854" y="-6.3380281690140849"/>
         </scene>
     </scenes>
     <resources>

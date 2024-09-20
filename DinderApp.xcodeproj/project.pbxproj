@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		6C79D1732C9C0FAC00C6222E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79D1722C9C0FAC00C6222E /* AppDelegate.swift */; };
 		6C79D1752C9C0FAC00C6222E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79D1742C9C0FAC00C6222E /* SceneDelegate.swift */; };
-		6C79D1772C9C0FAC00C6222E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79D1762C9C0FAC00C6222E /* ViewController.swift */; };
+		6C79D1772C9C0FAC00C6222E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79D1762C9C0FAC00C6222E /* AuthViewController.swift */; };
 		6C79D17A2C9C0FAC00C6222E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D1792C9C0FAC00C6222E /* Base */; };
 		6C79D17C2C9C0FAD00C6222E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D17B2C9C0FAD00C6222E /* Assets.xcassets */; };
 		6C79D17F2C9C0FAD00C6222E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D17E2C9C0FAD00C6222E /* Base */; };
 		6C79D1892C9C1EA300C6222E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D1882C9C1EA300C6222E /* GoogleService-Info.plist */; };
+		6CCF3EB72C9D9113005D2C47 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF3EB62C9D9113005D2C47 /* HomeViewController.swift */; };
 		D2CDF5E891B95BF39EE2A56B /* Pods_DinderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B400E5B6F276E7C225905E /* Pods_DinderApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +23,13 @@
 		6C79D16F2C9C0FAC00C6222E /* DinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C79D1722C9C0FAC00C6222E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C79D1742C9C0FAC00C6222E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C79D1762C9C0FAC00C6222E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C79D1762C9C0FAC00C6222E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		6C79D1792C9C0FAC00C6222E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C79D17B2C9C0FAD00C6222E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C79D17E2C9C0FAD00C6222E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C79D1802C9C0FAD00C6222E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C79D1882C9C1EA300C6222E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6CCF3EB62C9D9113005D2C47 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9857FCA136F8F8AEBA8BE84E /* Pods-DinderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinderApp.debug.xcconfig"; path = "Target Support Files/Pods-DinderApp/Pods-DinderApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E3F6B8472670B9FE809E3A39 /* Pods-DinderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinderApp.release.xcconfig"; path = "Target Support Files/Pods-DinderApp/Pods-DinderApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +69,8 @@
 			children = (
 				6C79D1722C9C0FAC00C6222E /* AppDelegate.swift */,
 				6C79D1742C9C0FAC00C6222E /* SceneDelegate.swift */,
-				6C79D1762C9C0FAC00C6222E /* ViewController.swift */,
+				6C79D1762C9C0FAC00C6222E /* AuthViewController.swift */,
+				6CCF3EB62C9D9113005D2C47 /* HomeViewController.swift */,
 				6C79D1782C9C0FAC00C6222E /* Main.storyboard */,
 				6C79D17B2C9C0FAD00C6222E /* Assets.xcassets */,
 				6C79D17D2C9C0FAD00C6222E /* LaunchScreen.storyboard */,
@@ -91,7 +94,6 @@
 				9857FCA136F8F8AEBA8BE84E /* Pods-DinderApp.debug.xcconfig */,
 				E3F6B8472670B9FE809E3A39 /* Pods-DinderApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,9 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C79D1772C9C0FAC00C6222E /* ViewController.swift in Sources */,
+				6C79D1772C9C0FAC00C6222E /* AuthViewController.swift in Sources */,
 				6C79D1732C9C0FAC00C6222E /* AppDelegate.swift in Sources */,
 				6C79D1752C9C0FAC00C6222E /* SceneDelegate.swift in Sources */,
+				6CCF3EB72C9D9113005D2C47 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +279,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -339,7 +342,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
