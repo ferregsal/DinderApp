@@ -14,9 +14,11 @@
 		6C79D17C2C9C0FAD00C6222E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D17B2C9C0FAD00C6222E /* Assets.xcassets */; };
 		6C79D17F2C9C0FAD00C6222E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D17E2C9C0FAD00C6222E /* Base */; };
 		6C79D1892C9C1EA300C6222E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C79D1882C9C1EA300C6222E /* GoogleService-Info.plist */; };
+		D2CDF5E891B95BF39EE2A56B /* Pods_DinderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B400E5B6F276E7C225905E /* Pods_DinderApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34B400E5B6F276E7C225905E /* Pods_DinderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C79D16F2C9C0FAC00C6222E /* DinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C79D1722C9C0FAC00C6222E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C79D1742C9C0FAC00C6222E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		6C79D17E2C9C0FAD00C6222E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C79D1802C9C0FAD00C6222E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C79D1882C9C1EA300C6222E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9857FCA136F8F8AEBA8BE84E /* Pods-DinderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinderApp.debug.xcconfig"; path = "Target Support Files/Pods-DinderApp/Pods-DinderApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E3F6B8472670B9FE809E3A39 /* Pods-DinderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinderApp.release.xcconfig"; path = "Target Support Files/Pods-DinderApp/Pods-DinderApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CDF5E891B95BF39EE2A56B /* Pods_DinderApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				6C79D1712C9C0FAC00C6222E /* DinderApp */,
 				6C79D1702C9C0FAC00C6222E /* Products */,
+				EED73B012D64663B59701C11 /* Pods */,
+				C7575C4584224C3481721DFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = DinderApp;
 			sourceTree = "<group>";
 		};
+		C7575C4584224C3481721DFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34B400E5B6F276E7C225905E /* Pods_DinderApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EED73B012D64663B59701C11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9857FCA136F8F8AEBA8BE84E /* Pods-DinderApp.debug.xcconfig */,
+				E3F6B8472670B9FE809E3A39 /* Pods-DinderApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C79D1832C9C0FAD00C6222E /* Build configuration list for PBXNativeTarget "DinderApp" */;
 			buildPhases = (
+				198E3551C0706DF39A551AC6 /* [CP] Check Pods Manifest.lock */,
 				6C79D16B2C9C0FAC00C6222E /* Sources */,
 				6C79D16C2C9C0FAC00C6222E /* Frameworks */,
 				6C79D16D2C9C0FAC00C6222E /* Resources */,
+				3590DFD8DEF695943E38A658 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		198E3551C0706DF39A551AC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinderApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3590DFD8DEF695943E38A658 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinderApp/Pods-DinderApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinderApp/Pods-DinderApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DinderApp/Pods-DinderApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C79D16B2C9C0FAC00C6222E /* Sources */ = {
@@ -291,6 +360,7 @@
 		};
 		6C79D1842C9C0FAD00C6222E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9857FCA136F8F8AEBA8BE84E /* Pods-DinderApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +389,7 @@
 		};
 		6C79D1852C9C0FAD00C6222E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F6B8472670B9FE809E3A39 /* Pods-DinderApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
